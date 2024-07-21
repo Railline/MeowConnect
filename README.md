@@ -22,7 +22,8 @@ a cmd will open
 
 ![image](https://github.com/user-attachments/assets/0aa45e34-ce5d-40c9-94ba-613228e2510d)
 
-write the ip of your meowface app ^^ > the one u get in first step
+write the ip of your meowface app ^^ 
+>the one u get in first step
 
 ![image](https://github.com/user-attachments/assets/d2e9f6cc-2bcf-4f09-93bc-33c818c2fa5e)
 
