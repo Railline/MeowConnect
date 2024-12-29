@@ -1,4 +1,13 @@
 import socket
+import argparse
+
+parser = argparse.ArgumentParser(add_help = False)
+
+DEST_IP_ARG = ''
+parser.add_argument("TargetIP", help = "Sends the packet to the specified adress",nargs='?')
+
+args = parser.parse_args()
+
 
 def send_udp_packet(destination_ip, port, data):
     # Create a UDP socket
@@ -13,8 +22,11 @@ def send_udp_packet(destination_ip, port, data):
         sock.close()
 
 if __name__ == "__main__":
-    # Ask the user for the destination IP address
-    DEST_IP = input("Please enter the destination IP address: ")
+    # Ask the user for the destination IP if not described in argument
+    if args.TargetIP == None:
+        DEST_IP = input("Please enter the destination IP address: ")
+    else:
+        DEST_IP = args.TargetIP
     # Destination port
     DEST_PORT = 49983
     # Data to send (replace with the desired hexadecimal data)
